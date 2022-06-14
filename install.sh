@@ -40,7 +40,7 @@ gitPull(){
     else
         rm -rf ${QLMainPath}/jbot/*
     fi
-    cd ${QLMainPath}/repo && rm -rf gd && git clone ${daili}https://github.com/curtinlv/gd.git
+    cd ${QLMainPath}/repo && rm -rf gd && git clone ${daili}https://github.com/dvdrm/gd.git
     cp -a ${QLMainPath}/repo/gd/* ${QLMainPath}/jbot && cp -a ${QLMainPath}/jbot/jk_script/* ${QLMainPath}/scripts/jk_script
     if [[ ! -f "${QLMainPath}/config/bot.json" ]]; then
     cp -f "${QLMainPath}/jbot/conf/bot.json" "${QLMainPath}/config"
